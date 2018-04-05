@@ -26,8 +26,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));  
 app.use('/', routes);  
 app.use('/users', users);  
-app.use('/Courses', Courses);  
-app.use('/UserInCourse', UsersInCourses);  
+app.use('/courses', Courses);  
+app.use('/userincourse', UsersInCourses);  
 // catch 404 and forward to error handler  
 app.use(function(req, res, next) {  
     var err = new Error('Not Found');  
