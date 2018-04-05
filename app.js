@@ -28,6 +28,9 @@ app.use('/', routes);
 app.use('/urinco', UsersInCourses);  
 app.use('/users', users);  
 app.use('/courses', Courses);  
+app.use('/minh', function(req, res, next) {
+    res.render('index',{ title: 'Express' });
+  })
 // catch 404 and forward to error handler  
 app.use(function(req, res, next) {  
     var err = new Error('Not Found');  
