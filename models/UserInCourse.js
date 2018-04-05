@@ -1,5 +1,5 @@
 var db = require('../dbconnection'); //reference of dbconnection.js  
-var Course = {
+var UserInCourse = {
     getUsersInCourses: function (callback) {
         return db.query(`SELECT 
                                 ccp.name AS CourseParentCategory, #added
